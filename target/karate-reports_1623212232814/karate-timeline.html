@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-4","id":1},{"content":"pool-1-thread-5","id":2},{"content":"pool-1-thread-1","id":3},{"content":"pool-1-thread-2","id":4},{"content":"pool-1-thread-3","id":5}];
+var items = [{"id":1,"group":1,"content":"todoist-test\/closeATask[1:6]","start":1623136978763,"end":1623136979510,"title":"todoist-test\/closeATask[1:6] 12:52:58.763-12:52:59.510 Reopen a task","className":"failed"},{"id":2,"group":2,"content":"todoist-test\/closeATask[2:11]","start":1623136978763,"end":1623136979513,"title":"todoist-test\/closeATask[2:11] 12:52:58.763-12:52:59.513 Close a task","className":"failed"},{"id":3,"group":3,"content":"todoist-test\/closeATask[3:16]","start":1623136978977,"end":1623136978993,"title":"todoist-test\/closeATask[3:16] 12:52:58.977-12:52:58.993 Error while closing\/reopening","className":"failed"},{"id":4,"group":3,"content":"todoist-test\/deleteAProject[1:5]","start":1623136979087,"end":1623136979521,"title":"todoist-test\/deleteAProject[1:5] 12:52:59.087-12:52:59.521 Deleting a valid project","className":"failed"},{"id":5,"group":1,"content":"todoist-test\/deleteAProject[2:10]","start":1623136979567,"end":1623136979610,"title":"todoist-test\/deleteAProject[2:10] 12:52:59.567-12:52:59.610 Error while deleting","className":"failed"},{"id":6,"group":4,"content":"todoist-test\/addATask[1:5]","start":1623136978763,"end":1623136979514,"title":"todoist-test\/addATask[1:5] 12:52:58.763-12:52:59.514 Create a New Post","className":"failed"},{"id":7,"group":5,"content":"todoist-test\/addATask[2:21]","start":1623136978763,"end":1623136979526,"title":"todoist-test\/addATask[2:21] 12:52:58.763-12:52:59.526 Create a new task error","className":"failed"},{"id":8,"group":2,"content":"todoist-test\/getUserProjects[1:6]","start":1623136979536,"end":1623136979588,"title":"todoist-test\/getUserProjects[1:6] 12:52:59.536-12:52:59.588 Get all user projects","className":"failed"},{"id":9,"group":4,"content":"todoist-test\/getUserProjects[2:12]","start":1623136979541,"end":1623136979595,"title":"todoist-test\/getUserProjects[2:12] 12:52:59.541-12:52:59.595 Get one user project","className":"failed"},{"id":10,"group":3,"content":"todoist-test\/getUserProjects[3:18]","start":1623136979534,"end":1623136979580,"title":"todoist-test\/getUserProjects[3:18] 12:52:59.534-12:52:59.580 If error in project path","className":"failed"},{"id":11,"group":5,"content":"todoist-test\/getUserProjects[4:24]","start":1623136979541,"end":1623136979598,"title":"todoist-test\/getUserProjects[4:24] 12:52:59.541-12:52:59.598 If error in project id","className":"failed"},{"id":12,"group":3,"content":"todoist-test\/OAuth[1:22]","start":1623136978763,"end":1623136978939,"title":"todoist-test\/OAuth[1:22] 12:52:58.763-12:52:58.939 Generate access token"},{"id":13,"group":3,"content":"todoist-test\/createAProject[1:5]","start":1623136979012,"end":1623136979021,"title":"todoist-test\/createAProject[1:5] 12:52:59.012-12:52:59.021 Create a New Post","className":"failed"},{"id":14,"group":3,"content":"todoist-test\/createAProject[2:21]","start":1623136979033,"end":1623136979047,"title":"todoist-test\/createAProject[2:21] 12:52:59.033-12:52:59.047 Error while creating(body mismatch)","className":"failed"},{"id":15,"group":3,"content":"todoist-test\/createAProject[3:32]","start":1623136979067,"end":1623136979073,"title":"todoist-test\/createAProject[3:32] 12:52:59.067-12:52:59.073 Creating same project","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-3","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-5","id":3},{"content":"pool-1-thread-1","id":4},{"content":"pool-1-thread-2","id":5}];
+var items = [{"id":1,"group":1,"content":"todoist-test\/closeATask[1:7]","start":1623134476712,"end":1623134477554,"title":"todoist-test\/closeATask[1:7] 12:11:16.712-12:11:17.554 Reopen a task","className":"failed"},{"id":2,"group":2,"content":"todoist-test\/closeATask[2:12]","start":1623134476713,"end":1623134477568,"title":"todoist-test\/closeATask[2:12] 12:11:16.713-12:11:17.568 Close a task","className":"failed"},{"id":3,"group":3,"content":"todoist-test\/closeATask[3:17]","start":1623134476716,"end":1623134476963,"title":"todoist-test\/closeATask[3:17] 12:11:16.716-12:11:16.963 Error while closing\/reopening","className":"failed"},{"id":4,"group":3,"content":"todoist-test\/deleteAProject[1:6]","start":1623134477056,"end":1623134477568,"title":"todoist-test\/deleteAProject[1:6] 12:11:17.056-12:11:17.568 Deleting a valid project","className":"failed"},{"id":5,"group":4,"content":"todoist-test\/deleteAProject[2:11]","start":1623134477580,"end":1623134477588,"title":"todoist-test\/deleteAProject[2:11] 12:11:17.580-12:11:17.588 Error while deleting","className":"failed"},{"id":6,"group":4,"content":"todoist-test\/addATask[1:6]","start":1623134476713,"end":1623134477539,"title":"todoist-test\/addATask[1:6] 12:11:16.713-12:11:17.539 Create a New Post","className":"failed"},{"id":7,"group":5,"content":"todoist-test\/addATask[2:22]","start":1623134476712,"end":1623134477539,"title":"todoist-test\/addATask[2:22] 12:11:16.712-12:11:17.539 Create a new task error","className":"failed"},{"id":8,"group":5,"content":"todoist-test\/getUserProjects[1:6]","start":1623134477595,"end":1623134477641,"title":"todoist-test\/getUserProjects[1:6] 12:11:17.595-12:11:17.641 Get all user projects","className":"failed"},{"id":9,"group":1,"content":"todoist-test\/getUserProjects[2:12]","start":1623134477607,"end":1623134477623,"title":"todoist-test\/getUserProjects[2:12] 12:11:17.607-12:11:17.623 Get one user project","className":"failed"},{"id":10,"group":3,"content":"todoist-test\/getUserProjects[3:18]","start":1623134477584,"end":1623134477615,"title":"todoist-test\/getUserProjects[3:18] 12:11:17.584-12:11:17.615 If error in project path","className":"failed"},{"id":11,"group":2,"content":"todoist-test\/getUserProjects[4:24]","start":1623134477598,"end":1623134477620,"title":"todoist-test\/getUserProjects[4:24] 12:11:17.598-12:11:17.620 If error in project id","className":"failed"},{"id":12,"group":3,"content":"todoist-test\/createAProject[1:6]","start":1623134476979,"end":1623134476992,"title":"todoist-test\/createAProject[1:6] 12:11:16.979-12:11:16.992 Create a New Post","className":"failed"},{"id":13,"group":3,"content":"todoist-test\/createAProject[2:22]","start":1623134477003,"end":1623134477023,"title":"todoist-test\/createAProject[2:22] 12:11:17.003-12:11:17.023 Error while creating(body mismatch)","className":"failed"},{"id":14,"group":3,"content":"todoist-test\/createAProject[3:33]","start":1623134477032,"end":1623134477047,"title":"todoist-test\/createAProject[3:33] 12:11:17.032-12:11:17.047 Creating same project","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

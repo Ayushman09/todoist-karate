@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.TodoistTest" time="7.522" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/test-classes:/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/classes:/home/ayushc/.m2/repository/com/intuit/karate/karate-junit5/1.0.1/karate-junit5-1.0.1.jar:/home/ayushc/.m2/repository/com/intuit/karate/karate-core/1.0.1/karate-core-1.0.1.jar:/home/ayushc/.m2/repository/org/graalvm/js/js-scriptengine/21.0.0/js-scriptengine-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/sdk/graal-sdk/21.0.0/graal-sdk-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/js/js/21.0.0/js-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/regex/regex/21.0.0/regex-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/truffle/truffle-api/21.0.0/truffle-api-21.0.0.jar:/home/ayushc/.m2/repository/com/ibm/icu/icu4j/67.1/icu4j-67.1.jar:/home/ayushc/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/ayushc/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/ayushc/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/ayushc/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/home/ayushc/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/home/ayushc/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/ayushc/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/ayushc/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/ayushc/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/ayushc/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/ayushc/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/home/ayushc/.m2/repository/de/siegmar/fastcsv/1.0.4/fastcsv-1.0.4.jar:/home/ayushc/.m2/repository/info/picocli/picocli/4.5.2/picocli-4.5.2.jar:/home/ayushc/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/ayushc/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ayushc/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ayushc/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/ayushc/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/ayushc/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/surefire/surefirebooter16937663677309389222.jar /home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/surefire 2021-06-09T10-33-26_228-jvmRun1 surefire16054055066175160327tmp surefire_012920749309598660979tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/test-classes:/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/classes:/home/ayushc/.m2/repository/com/intuit/karate/karate-junit5/1.0.1/karate-junit5-1.0.1.jar:/home/ayushc/.m2/repository/com/intuit/karate/karate-core/1.0.1/karate-core-1.0.1.jar:/home/ayushc/.m2/repository/org/graalvm/js/js-scriptengine/21.0.0/js-scriptengine-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/sdk/graal-sdk/21.0.0/graal-sdk-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/js/js/21.0.0/js-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/regex/regex/21.0.0/regex-21.0.0.jar:/home/ayushc/.m2/repository/org/graalvm/truffle/truffle-api/21.0.0/truffle-api-21.0.0.jar:/home/ayushc/.m2/repository/com/ibm/icu/icu4j/67.1/icu4j-67.1.jar:/home/ayushc/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/ayushc/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/ayushc/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/ayushc/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/home/ayushc/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/home/ayushc/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/ayushc/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/ayushc/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/ayushc/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/ayushc/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/ayushc/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/home/ayushc/.m2/repository/de/siegmar/fastcsv/1.0.4/fastcsv-1.0.4.jar:/home/ayushc/.m2/repository/info/picocli/picocli/4.5.2/picocli-4.5.2.jar:/home/ayushc/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/ayushc/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ayushc/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ayushc/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/ayushc/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/ayushc/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ayushc"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/surefire/surefirebooter16937663677309389222.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="user.name" value="ayushc"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.8.0-53-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ayushc/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="/home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.TodoistTest" time="7.515">
+    <failure message="status code was: 405, expected: 204, response time in milliseconds: 1535, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: &#10;&#10;classpath:todoist-test/closeATask.feature:12&#10;status code was: 405, expected: 204, response time in milliseconds: 1536, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: &#10;&#10;classpath:todoist-test/closeATask.feature:18&#10;java.lang.NullPointerException&#10;classpath:todoist-test/closeATask.feature:23&#10;status code was: 400, expected: 204, response time in milliseconds: 1183, url: https://api.todoist.com/rest/v1/projects/2203306141, response: &#10;The token does not have sufficient scopes&#10;&#10;classpath:todoist-test/deleteAProject.feature:11&#10;status code was: 400, expected: 404, response time in milliseconds: 854, url: https://api.todoist.com/rest/v1/projects/2203306, response: &#10;The token does not have sufficient scopes&#10;&#10;classpath:todoist-test/deleteAProject.feature:17&#10;status code was: 404, expected: 200, response time in milliseconds: 784, url: https://api.todoist.com/rest/v1/projects/, response: &#10;404 page not found&#10;&#10;classpath:todoist-test/getUserProjects.feature:11&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;404 page not found&#10;&apos;&#10;  &apos;404 page not foung&#10;&apos;&#10;&#10;classpath:todoist-test/getUserProjects.feature:26&#10;status code was: 200, expected: 400, response time in milliseconds: 1138, url: https://api.todoist.com/rest/v1/projects, response: &#10;{&#10;	&quot;id&quot;: 2267257936,&#10;	&quot;order&quot;: 6,&#10;	&quot;color&quot;: 47,&#10;	&quot;name&quot;: &quot;Shopping List&quot;,&#10;	&quot;comment_count&quot;: 0,&#10;	&quot;shared&quot;: false,&#10;	&quot;favorite&quot;: false,&#10;	&quot;sync_id&quot;: 0,&#10;	&quot;url&quot;: &quot;https://todoist.com/showProject?id=2267257936&quot;&#10;}&#10;&#10;classpath:todoist-test/createAProject.feature:47 ==&gt; expected: &lt;0&gt; but was: &lt;8&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 405, expected: 204, response time in milliseconds: 1535, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
+
+classpath:todoist-test/closeATask.feature:12
+status code was: 405, expected: 204, response time in milliseconds: 1536, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
+
+classpath:todoist-test/closeATask.feature:18
+java.lang.NullPointerException
+classpath:todoist-test/closeATask.feature:23
+status code was: 400, expected: 204, response time in milliseconds: 1183, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:11
+status code was: 400, expected: 404, response time in milliseconds: 854, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:17
+status code was: 404, expected: 200, response time in milliseconds: 784, url: https://api.todoist.com/rest/v1/projects/, response: 
+404 page not found
+
+classpath:todoist-test/getUserProjects.feature:11
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '404 page not found
+'
+  '404 page not foung
+'
+
+classpath:todoist-test/getUserProjects.feature:26
+status code was: 200, expected: 400, response time in milliseconds: 1138, url: https://api.todoist.com/rest/v1/projects, response: 
+{
+	"id": 2267257936,
+	"order": 6,
+	"color": 47,
+	"name": "Shopping List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2267257936"
+}
+
+classpath:todoist-test/createAProject.feature:47 ==> expected: <0> but was: <8>
+	at examples.TodoistTest.testParallel(TodoistTest.java:16)
+]]></failure>
+    <system-out><![CDATA[10:33:28.227 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:33:28.232 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1623215008232
+10:33:28.247 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+10:33:29.653 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:29.653 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:29.653 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:29.653 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:29.653 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:29.760 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:29.826 [pool-1-thread-1] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:23
+Then status 400
+java.lang.NullPointerException
+classpath:todoist-test/closeATask.feature:23
+10:33:29.842 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:30.335 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks/487290266/close
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:33:30.335 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks/487290266/reopen
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:33:30.337 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+10:33:30.337 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/tasks
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"project_id":2203306141}
+
+10:33:30.337 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/tasks
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"project_id":2203306141,"content":"Buy Milk"}
+
+---------------------------------------------------------
+feature: classpath:todoist-test/OAuth.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.0012
+---------------------------------------------------------
+
+10:33:30.907 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:todoist-test/OAuth.feature
+10:33:31.875 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1536
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:31 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 b72519ee5ed84e4e3db077b5b7e93d38.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: rMF0FFBCqXbzUBqxIbq-O2zpVP4mk49oXhZU0VfxG1j6vkjH-muTUg==
+
+10:33:31.876 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1535
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:31 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f1d4e39bef236cf869562ee55cde3be5.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: I1MU4GaV-f703vZEshc5xhb84vjhzEz5N-62Su-EOGNPXIyLJzlogw==
+
+10:33:31.876 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1535
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 14
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:31 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 5c49044a9bbc82066ce04ae597e1a6a7.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: TuRRnjYPCYWWo_-kQZrz3U6D--5gueLWMLHb9jA9ey-n3U9OXfneJA==
+Empty content
+
+10:33:31.886 [pool-1-thread-4] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:12
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 1535, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
+
+classpath:todoist-test/closeATask.feature:12
+10:33:31.886 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:18
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 1536, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
+
+classpath:todoist-test/closeATask.feature:18
+10:33:31.928 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:31.940 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:31.960 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nam":"Shopping List"}
+
+10:33:31.979 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+10:33:31.980 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:32.000 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.todoist.com/rest/v1/projects/2203306141
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:33:32.053 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1716
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 206
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:31 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 4e656b07a362875a3bbb29e1d795ab32.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: q5ijLytwJflHsD7inALUCqTgZCvABPBVz51QFODRD2zLAsTp8FvXtg==
+{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257935,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257935","order":5}
+10:33:32.072 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://api.todoist.com/rest/v1/projects/2267257935
+2 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+10:33:32.243 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1905
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 328
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:32 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 7dda57f7e6978046952c757eba986c68.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: ZtpvnSqxjGrAcGamHN8Nf9y9JQrFTBosQVyubAmFeztAtGcWv5SVpw==
+{"comment_count":0,"creator":34149327,"label_ids":[],"created":"2021-06-09T05:03:31Z","assigner":0,"description":"","completed":false,"priority":1,"content":"Buy Milk","url":"https:\/\/todoist.com\/showTask?id=4896000438","section_id":0,"project_id":2266692961,"id":4896000438,"order":2}
+10:33:32.249 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://api.todoist.com/rest/v1/tasks/4896000438
+2 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+10:33:32.772 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 522
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 328
+2 < Connection: keep-alive
+2 < Date: Wed, 09 Jun 2021 05:03:32 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 b72519ee5ed84e4e3db077b5b7e93d38.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Amz-Cf-Id: JmArmVD53XCITdy_FJNLL1QSAdEKosFN4qIv33ZuT9_G6GBLQ_TZ1w==
+{"comment_count":0,"creator":34149327,"label_ids":[],"created":"2021-06-09T05:03:31Z","assigner":0,"description":"","completed":false,"priority":1,"content":"Buy Milk","url":"https:\/\/todoist.com\/showTask?id=4896000438","section_id":0,"project_id":2266692961,"id":4896000438,"order":2}
+10:33:32.799 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:32.815 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 837
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 11
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:32 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 be3d7ac8ca6f264ed23d40684ed75b38.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: Ug21ZvLDPJVquY-lFf03YL3OfSOokEK7bzDCG3NHyVGyaXA4l9Om6g==
+Empty name
+
+10:33:32.836 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.todoist.com/rest/v1/projects/2203306
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:33:32.854 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 775
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 206
+2 < Connection: keep-alive
+2 < Date: Wed, 09 Jun 2021 05:03:32 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 b72519ee5ed84e4e3db077b5b7e93d38.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Amz-Cf-Id: M58BucJPVynTWP1FbBJjQFtNrzaPgP4rQSauQ0vEU4mHx9gL6EBVBg==
+{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257935,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257935","order":5}
+10:33:32.855 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:32.903 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:32.906 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:33:32.911 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/2266692961
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:33:33.128 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1138
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 206
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:33 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 73965a3df6a91e968e55d2d6ab5113be.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: fbT1q8tp9KxUWfQoWAyOUV4ufzFEqBqKsWYtPaczmxlnCmmEx79tNw==
+{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257936,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257936","order":6}
+10:33:33.131 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/createAProject.feature:47
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 1138, url: https://api.todoist.com/rest/v1/projects, response: 
+{
+	"id": 2267257936,
+	"order": 6,
+	"color": 47,
+	"name": "Shopping List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2267257936"
+}
+
+classpath:todoist-test/createAProject.feature:47
+10:33:33.142 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:33.151 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/project/
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:todoist-test/addATask.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 5.2709
+---------------------------------------------------------
+
+10:33:33.180 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:todoist-test/addATask.feature
+10:33:33.187 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1183
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 11bda279a9e6aa2f34e957379f64a2ae.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: zxCdMbvZlL99Zen5WjOIxkDEi0BgdursuiAa8iSNDs93qUfNX8AkCw==
+The token does not have sufficient scopes
+
+10:33:33.189 [pool-1-thread-3] ERROR com.intuit.karate - classpath:todoist-test/deleteAProject.feature:11
+Then status 204
+status code was: 400, expected: 204, response time in milliseconds: 1183, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:11
+10:33:33.195 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+10:33:33.200 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/22666
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:todoist-test/closeATask.feature
+scenarios:  3 | passed:  0 | failed:  3 | time: 4.3780
+---------------------------------------------------------
+
+10:33:33.348 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 6 (3 remaining) classpath:todoist-test/closeATask.feature
+---------------------------------------------------------
+feature: classpath:todoist-test/createAProject.feature
+scenarios:  3 | passed:  2 | failed:  1 | time: 5.0918
+---------------------------------------------------------
+
+10:33:33.494 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 6 (2 remaining) classpath:todoist-test/createAProject.feature
+10:33:33.511 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 359
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 19
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 62f2e56625f91dc13ed17b9eb89dabf7.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: v535v_YLrBjEALQnf_Rc0h49l4Sc0bgvOc6XvJgdAnM2bbfsqH44ww==
+404 page not found
+
+10:33:33.514 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/getUserProjects.feature:26
+Then match response == "404 page not foung\n"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '404 page not found
+'
+  '404 page not foung
+'
+
+classpath:todoist-test/getUserProjects.feature:26
+10:33:33.692 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 854
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 932ff11be8ea9893fe1627fa0b1f3231.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: qp8GQZJKCtgZzdCCu1CK_YywQBNOqdVkcvvejHWN-8bUCROPmMhQlQ==
+The token does not have sufficient scopes
+
+10:33:33.692 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 784
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 19
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 d5fe4a337f81c31dfbd7cacc73d494e1.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: nlLEiyQg747saidrdr0ZPjSnyTZKa9HCy7rjQJrG-kvA-564vjvkSA==
+404 page not found
+
+10:33:33.692 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 780
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 209
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:33 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 3d1357ac8648a82549f274733b419e81.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: SZQrmEE-hlWK6MQm0fFiUbXjvWKmcm9325d8BwOKUQqPBKA4T3Gu6w==
+{"comment_count":0,"shared":false,"color":48,"name":"Inbox","id":2266692961,"inbox_project":true,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2266692961"}
+10:33:33.694 [pool-1-thread-4] ERROR com.intuit.karate - classpath:todoist-test/getUserProjects.feature:11
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 784, url: https://api.todoist.com/rest/v1/projects/, response: 
+404 page not found
+
+classpath:todoist-test/getUserProjects.feature:11
+10:33:33.694 [pool-1-thread-2] ERROR com.intuit.karate - classpath:todoist-test/deleteAProject.feature:17
+Then status 404
+status code was: 400, expected: 404, response time in milliseconds: 854, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:17
+---------------------------------------------------------
+feature: classpath:todoist-test/deleteAProject.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 2.0736
+---------------------------------------------------------
+
+10:33:33.785 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 6 (1 remaining) classpath:todoist-test/deleteAProject.feature
+10:33:34.249 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1042
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 10
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 05:03:34 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 601b50d44149223eb0103a4801dc88ba.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: ZjnrCUaABqSjRm8Kv_g0XVdtWw5Bxhq_bfJW3__jPOQtgV5l0t7UbQ==
+Not Found
+
+---------------------------------------------------------
+feature: classpath:todoist-test/getUserProjects.feature
+scenarios:  4 | passed:  2 | failed:  2 | time: 3.0269
+---------------------------------------------------------
+
+10:33:34.443 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 6 of 6 (0 remaining) classpath:todoist-test/getUserProjects.feature
+Karate version: 1.0.1
+======================================================
+elapsed:   6.95 | threads:    5 | thread time: 19.84 
+features:     6 | skipped:    0 | efficiency: 0.57
+scenarios:   15 | passed:     7 | failed: 8
+======================================================
+>>> failed features:
+status code was: 405, expected: 204, response time in milliseconds: 1535, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
+
+classpath:todoist-test/closeATask.feature:12
+status code was: 405, expected: 204, response time in milliseconds: 1536, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
+
+classpath:todoist-test/closeATask.feature:18
+java.lang.NullPointerException
+classpath:todoist-test/closeATask.feature:23
+status code was: 400, expected: 204, response time in milliseconds: 1183, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:11
+status code was: 400, expected: 404, response time in milliseconds: 854, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:17
+status code was: 404, expected: 200, response time in milliseconds: 784, url: https://api.todoist.com/rest/v1/projects/, response: 
+404 page not found
+
+classpath:todoist-test/getUserProjects.feature:11
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '404 page not found
+'
+  '404 page not foung
+'
+
+classpath:todoist-test/getUserProjects.feature:26
+status code was: 200, expected: 400, response time in milliseconds: 1138, url: https://api.todoist.com/rest/v1/projects, response: 
+{
+	"id": 2267257936,
+	"order": 6,
+	"color": 47,
+	"name": "Shopping List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2267257936"
+}
+
+classpath:todoist-test/createAProject.feature:47
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.0.1
+file:///home/ayushc/Zemoso-training/Karate-framework/karateAssignment/todoist-testing/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
