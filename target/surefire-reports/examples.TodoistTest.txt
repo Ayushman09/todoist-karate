@@ -1,50 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: examples.TodoistTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.522 s <<< FAILURE! - in examples.TodoistTest
-testParallel  Time elapsed: 7.515 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.632 s <<< FAILURE! - in examples.TodoistTest
+testParallel  Time elapsed: 7.619 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 405, expected: 204, response time in milliseconds: 1535, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
+status code was: 405, expected: 204, response time in milliseconds: 1350, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
 
 classpath:todoist-test/closeATask.feature:12
-status code was: 405, expected: 204, response time in milliseconds: 1536, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
+status code was: 405, expected: 204, response time in milliseconds: 1347, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
 
 classpath:todoist-test/closeATask.feature:18
 java.lang.NullPointerException
 classpath:todoist-test/closeATask.feature:23
-status code was: 400, expected: 204, response time in milliseconds: 1183, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
+status code was: 400, expected: 204, response time in milliseconds: 418, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
 The token does not have sufficient scopes
 
 classpath:todoist-test/deleteAProject.feature:11
-status code was: 400, expected: 404, response time in milliseconds: 854, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
+status code was: 400, expected: 404, response time in milliseconds: 764, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
 The token does not have sufficient scopes
 
 classpath:todoist-test/deleteAProject.feature:17
-status code was: 404, expected: 200, response time in milliseconds: 784, url: https://api.todoist.com/rest/v1/projects/, response: 
-404 page not found
+status code was: 400, expected: 200, response time in milliseconds: 1510, url: https://api.todoist.com/rest/v1/projects, response: 
+Maximum number of projects per user limit reached
 
-classpath:todoist-test/getUserProjects.feature:11
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  '404 page not found
-'
-  '404 page not foung
-'
-
-classpath:todoist-test/getUserProjects.feature:26
-status code was: 200, expected: 400, response time in milliseconds: 1138, url: https://api.todoist.com/rest/v1/projects, response: 
-{
-	"id": 2267257936,
-	"order": 6,
-	"color": 47,
-	"name": "Shopping List",
-	"comment_count": 0,
-	"shared": false,
-	"favorite": false,
-	"sync_id": 0,
-	"url": "https://todoist.com/showProject?id=2267257936"
-}
-
-classpath:todoist-test/createAProject.feature:47 ==> expected: <0> but was: <8>
+classpath:todoist-test/createAProject.feature:17
+no step-definition method match found for: response == "Sync item already processed. Ignored"
+classpath:todoist-test/createAProject.feature:48 ==> expected: <0> but was: <7>
 	at examples.TodoistTest.testParallel(TodoistTest.java:16)
 

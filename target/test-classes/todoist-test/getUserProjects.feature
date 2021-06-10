@@ -5,7 +5,7 @@ Background:
     * configure headers = { 'Authorization': 'Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137' }
 
 Scenario: Get all user projects
-    Given path 'projects/'
+    Given path 'projects'
     # And header Authorization = 'Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137'
     When method GET
     Then status 200
@@ -23,7 +23,7 @@ Scenario: If error in project path
     # And header Authorization = 'Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137'
     When method GET
     Then status 404
-    Then match response == "404 page not foung\n"
+    Then match response == "404 page not found\n"
 
 Scenario: If error in project id
     Given path 'projects/22666'

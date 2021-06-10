@@ -2544,3 +2544,752 @@ classpath:todoist-test/deleteAProject.feature:17
 Not Found
 
 10:33:34.443 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 6 of 6 (0 remaining) classpath:todoist-test/getUserProjects.feature
+11:36:28.013 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:36:28.020 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1623218788019
+11:36:28.035 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+11:36:29.754 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:29.754 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:29.754 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:29.754 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:29.754 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:29.872 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:29.974 [pool-1-thread-1] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:23
+Then status 400
+java.lang.NullPointerException
+classpath:todoist-test/closeATask.feature:23
+11:36:29.995 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:30.795 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks/487290266/close
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:30.799 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+11:36:30.795 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks/487290266/reopen
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:30.799 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/tasks
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"project_id":2203306141}
+
+11:36:30.804 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/tasks
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"project_id":2203306141,"content":"Buy Milk"}
+
+11:36:31.539 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:todoist-test/OAuth.feature
+11:36:32.279 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1479
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:32 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 62f2e56625f91dc13ed17b9eb89dabf7.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: 9f5afkPLMMaGAkXp_AIv70nAI48NzVlzRss33TUjWrXegnzIVQ0rkA==
+
+11:36:32.279 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1469
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:32 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 7626d4f85c10f22c9bad40f2932ba2b4.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: gBDPh4KkM7yjx_b8SI6V563PcrSqLfVcLlvcwlfshCccaBze_MbI5g==
+
+11:36:32.279 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1467
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 14
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:32 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 5d33745305d74a633a532a9b09259451.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: LTEbM0OBortoTcKs9xFbOliOVfopaKPLdSw1otX8K4pe85nH4PMJuw==
+Empty content
+
+11:36:32.290 [pool-1-thread-4] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:12
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 1469, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
+
+classpath:todoist-test/closeATask.feature:12
+11:36:32.290 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:18
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 1479, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
+
+classpath:todoist-test/closeATask.feature:18
+11:36:32.336 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:32.367 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:32.367 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+11:36:32.383 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nam":"Shopping List"}
+
+11:36:32.390 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:32.399 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.todoist.com/rest/v1/projects/2203306141
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:32.513 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1709
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 206
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:32 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 f92da9db091e987516c75858512c1301.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: mUw_a-YOxJE4v65B12jw6zmzYfVpl419Hm7Q7T6TBllRV_3MYbG-sA==
+{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267260504,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267260504","order":7}
+11:36:32.538 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://api.todoist.com/rest/v1/projects/2267260504
+2 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:36:32.666 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1857
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 328
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:32 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 43e55f646e01e933d0cfa7863b958281.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: Zx6tBO3NVx02XenES6J2oCIHVSo98QP0zjlRXWHLjDD7lVkOV2SpFQ==
+{"comment_count":0,"creator":34149327,"label_ids":[],"created":"2021-06-09T06:06:32Z","assigner":0,"description":"","completed":false,"priority":1,"content":"Buy Milk","url":"https:\/\/todoist.com\/showTask?id=4896104894","section_id":0,"project_id":2266692961,"id":4896104894,"order":3}
+11:36:32.673 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://api.todoist.com/rest/v1/tasks/4896104894
+2 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:36:32.976 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 608
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:32 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 61c8e84cb23f6e3bff5da088063e4b27.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: 2ivV5s8jx2bPa6M7d5qBTPjzwRsd3s0SGrQijV7cIfBQysAB0zZWHg==
+Maximum number of projects per user limit reached
+
+11:36:32.980 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/createAProject.feature:48
+Then response == "Sync item already processed. Ignored"
+no step-definition method match found for: response == "Sync item already processed. Ignored"
+classpath:todoist-test/createAProject.feature:48
+11:36:32.987 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:32.994 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.todoist.com/rest/v1/projects/2203306
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:33.205 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 822
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 11
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 be3d7ac8ca6f264ed23d40684ed75b38.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: Bso-HjEMzKOUi5q5NSunur643SluH2jbBF0BEV3I609SnFZxqA_o1Q==
+Empty name
+
+11:36:33.215 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:33.220 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:33.232 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 3dad6ded2d7744bd551eb80dd12cce0b.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: sYFaWWLiR5ZIHABKf1ITNK_zbELmdeIw8lNmRJ8345JJ4S18PBR9mw==
+The token does not have sufficient scopes
+
+11:36:33.234 [pool-1-thread-3] ERROR com.intuit.karate - classpath:todoist-test/deleteAProject.feature:11
+Then status 204
+status code was: 400, expected: 204, response time in milliseconds: 832, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:11
+11:36:33.254 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:33.264 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/2266692961
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:33.289 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 750
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 206
+2 < Connection: keep-alive
+2 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 faadc7d00949654407471d04f48be4fe.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Amz-Cf-Id: 1IDnjNZIS7GrcAy3vrSefd57dsfuY5kL0EmJjl01oIDQDujGrA34tA==
+{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267260504,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267260504","order":7}
+11:36:33.300 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:33.305 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/project/
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:33.421 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 746
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 328
+2 < Connection: keep-alive
+2 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 78ca6cf79543bb91c755728d3f2d68b7.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Amz-Cf-Id: FU_Gr_yL5keWwF_g5PmyoVlPjIU0NSEPfI6siNhP8xdk5bhx1A10Sg==
+{"comment_count":0,"creator":34149327,"label_ids":[],"created":"2021-06-09T06:06:32Z","assigner":0,"description":"","completed":false,"priority":1,"content":"Buy Milk","url":"https:\/\/todoist.com\/showTask?id=4896104894","section_id":0,"project_id":2266692961,"id":4896104894,"order":3}
+11:36:33.434 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:36:33.445 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/22666
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:36:33.561 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 340
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 19
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f92da9db091e987516c75858512c1301.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: hXdj12Xly7SFw3MJZt8WV7GFx9FL_GlXzxaz2rptYVenOJuO9oQ6pQ==
+404 page not found
+
+11:36:33.566 [pool-1-thread-4] ERROR com.intuit.karate - classpath:todoist-test/getUserProjects.feature:11
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 340, url: https://api.todoist.com/rest/v1/projects/, response: 
+404 page not found
+
+classpath:todoist-test/getUserProjects.feature:11
+11:36:33.768 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:todoist-test/addATask.feature
+11:36:33.773 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 779
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 a54512dcc1a642557608accecd0a680b.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: Sg0oZwNdAGF67mxmae7n69wPHTGtWpx2v2DxAmmWpGDU5GOltSH4PA==
+The token does not have sufficient scopes
+
+11:36:33.775 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/deleteAProject.feature:17
+Then status 404
+status code was: 400, expected: 404, response time in milliseconds: 779, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:17
+11:36:33.813 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 367
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 10
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 d5fe4a337f81c31dfbd7cacc73d494e1.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: --ZACw3MJ4OCL3RsaelyG80IMtX_D48ZHRbIXR1d01FPk3jy2in-Jw==
+Not Found
+
+11:36:33.940 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 6 (3 remaining) classpath:todoist-test/closeATask.feature
+11:36:34.028 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 722
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 19
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 a222f7d3d2272b7c6bdcbbe4f695b008.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: XxW_spvC0d5e_3_LIPOZnbPnWpq0vDkXEN_TAd8EKksFF0ISJiPK-A==
+404 page not found
+
+11:36:34.034 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 766
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 209
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:06:33 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 f171ab091c8a5c56a9c13ec1befacf99.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: tyTSlYVI_QPVJ27xX0VkwzvRKOL7_Yf-K-dSUfBhi--faWxCd5N01w==
+{"comment_count":0,"shared":false,"color":48,"name":"Inbox","id":2266692961,"inbox_project":true,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2266692961"}
+11:36:34.099 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 6 (2 remaining) classpath:todoist-test/createAProject.feature
+11:36:34.177 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 6 (1 remaining) classpath:todoist-test/deleteAProject.feature
+11:36:34.323 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 6 of 6 (0 remaining) classpath:todoist-test/getUserProjects.feature
+11:37:45.770 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:37:45.778 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1623218865778
+11:37:45.790 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+11:37:47.615 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:47.615 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:47.616 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:47.615 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:47.615 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:47.729 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:47.810 [pool-1-thread-1] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:23
+Then status 400
+java.lang.NullPointerException
+classpath:todoist-test/closeATask.feature:23
+11:37:47.856 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:48.430 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks/487290266/reopen
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:48.431 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks/487290266/close
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:48.433 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+11:37:48.436 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/tasks
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"project_id":2203306141}
+
+11:37:48.442 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/tasks
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"project_id":2203306141,"content":"Buy Milk"}
+
+11:37:49.105 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:todoist-test/OAuth.feature
+11:37:49.783 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1347
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:49 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 73965a3df6a91e968e55d2d6ab5113be.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: -tKEUGUheA3c3tBifU_7R8BSxvbbHt5pVJ9XibNSRxGQvncoDv5ExQ==
+
+11:37:49.783 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1350
+1 < 405
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:49 GMT
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 f1d4e39bef236cf869562ee55cde3be5.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: EDIJOas-isfw3P10ntURynvY6FSDGAvyaWKmKxpvF9J2f0m5IZQ88A==
+
+11:37:49.783 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1344
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 14
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:49 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 61c8e84cb23f6e3bff5da088063e4b27.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: 6vw-ifXc5R6McEEZIoHehCjBKee2wC3CevdhPWo4ghCNdrh2FIL0vQ==
+Empty content
+
+11:37:49.785 [pool-1-thread-4] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:12
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 1350, url: https://api.todoist.com/rest/v1/tasks/487290266/reopen, response: 
+
+classpath:todoist-test/closeATask.feature:12
+11:37:49.788 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/closeATask.feature:18
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 1347, url: https://api.todoist.com/rest/v1/tasks/487290266/close, response: 
+
+classpath:todoist-test/closeATask.feature:18
+11:37:49.809 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:49.812 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:49.828 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:49.834 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nam":"Shopping List"}
+
+11:37:49.836 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+11:37:49.843 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.todoist.com/rest/v1/projects/2203306141
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:49.947 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1510
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:49 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 73965a3df6a91e968e55d2d6ab5113be.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: 4i3tWEAb-It9Ne6HIbHVck5FBVZ4yc8gmu0wKwvbzA_xdKg9SiuqAA==
+Maximum number of projects per user limit reached
+
+11:37:49.949 [pool-1-thread-1] ERROR com.intuit.karate - classpath:todoist-test/createAProject.feature:17
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1510, url: https://api.todoist.com/rest/v1/projects, response: 
+Maximum number of projects per user limit reached
+
+classpath:todoist-test/createAProject.feature:17
+11:37:49.958 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:49.969 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.todoist.com/rest/v1/projects/2203306
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:50.133 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1691
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 328
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:50 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 5c49044a9bbc82066ce04ae597e1a6a7.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: E-QU4qGeHWuf1f_ofm5VxRk3tuP1PCduCup3lhpwRS6NzWYhD_Po3A==
+{"comment_count":0,"creator":34149327,"label_ids":[],"created":"2021-06-09T06:07:49Z","assigner":0,"description":"","completed":false,"priority":1,"content":"Buy Milk","url":"https:\/\/todoist.com\/showTask?id=4896107094","section_id":0,"project_id":2266692961,"id":4896107094,"order":4}
+11:37:50.151 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://api.todoist.com/rest/v1/tasks/4896107094
+2 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:37:50.262 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 418
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:50 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 5d33745305d74a633a532a9b09259451.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: DdeqZYhccQBINbOg_MRLbFHwqSPIsfQddDGyeR2OyMsSD3G_YqVGuw==
+The token does not have sufficient scopes
+
+11:37:50.265 [pool-1-thread-3] ERROR com.intuit.karate - classpath:todoist-test/deleteAProject.feature:11
+Then status 204
+status code was: 400, expected: 204, response time in milliseconds: 418, url: https://api.todoist.com/rest/v1/projects/2203306141, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:11
+11:37:50.271 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:50.279 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:50.601 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 765
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 11
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:50 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 601b50d44149223eb0103a4801dc88ba.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: xcmgRI5TbO-Wh5zUSBLeE6jDWaiTMwwOKJI8oM3vthoZelARfkypXA==
+Empty name
+
+11:37:50.619 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:50.631 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/2266692961
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:50.683 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 846
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:50 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 e05b60f5871f298dbb2f73224ccaa683.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: ARI9U8OLY4PVlA2Tm6UZrjs36IvXz6uClH9e4e_W2sabRz162hOwng==
+Maximum number of projects per user limit reached
+
+11:37:50.689 [pool-1-thread-5] ERROR com.intuit.karate - classpath:todoist-test/createAProject.feature:48
+Then response == "Sync item already processed. Ignored"
+no step-definition method match found for: response == "Sync item already processed. Ignored"
+classpath:todoist-test/createAProject.feature:48
+11:37:50.700 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:50.715 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/project/
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:50.736 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 764
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:50 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 5a0b4545b6ccc93ea532871131fe29d5.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: czgcr8EnU-hIYgBkZGMecvrBKYO8xpU0lej5ibHlR2YbTvY1ie4WpA==
+The token does not have sufficient scopes
+
+11:37:50.739 [pool-1-thread-1] ERROR com.intuit.karate - classpath:todoist-test/deleteAProject.feature:17
+Then status 404
+status code was: 400, expected: 404, response time in milliseconds: 764, url: https://api.todoist.com/rest/v1/projects/2203306, response: 
+The token does not have sufficient scopes
+
+classpath:todoist-test/deleteAProject.feature:17
+11:37:50.749 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:50.763 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects/22666
+1 > Authorization: Bearer e4c291d63415c9d0f274cf9069d2b571f61a7137
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:50.940 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 786
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 328
+2 < Connection: keep-alive
+2 < Date: Wed, 09 Jun 2021 06:07:50 GMT
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 895cdc72d0f882be5d53af58b9557570.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Amz-Cf-Id: 4iLCVvoMr8YlcpDLGB28gA6nBSvWO4hTkn0dNRpVxijii8flTFhaIQ==
+{"comment_count":0,"creator":34149327,"label_ids":[],"created":"2021-06-09T06:07:49Z","assigner":0,"description":"","completed":false,"priority":1,"content":"Buy Milk","url":"https:\/\/todoist.com\/showTask?id=4896107094","section_id":0,"project_id":2266692961,"id":4896107094,"order":4}
+11:37:51.070 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 787
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Date: Wed, 09 Jun 2021 06:07:51 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 3dad6ded2d7744bd551eb80dd12cce0b.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: BiXUNa1WJlp_fOQLIa9aoH4-raBjgDeYmSgN9x-xjFnLbSMU-1Pl-w==
+[{"comment_count":0,"shared":false,"color":48,"name":"Inbox","id":2266692961,"inbox_project":true,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2266692961"},{"comment_count":0,"shared":false,"color":48,"name":"Welcome 👋","id":2266692962,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2266692962","order":1},{"comment_count":0,"shared":false,"color":48,"name":"Try Boards","id":2266692963,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2266692963","order":2},{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257652,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257652","order":3},{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257653,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257653","order":4},{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257935,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257935","order":5},{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267257936,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267257936","order":6},{"comment_count":0,"shared":false,"color":47,"name":"Shopping List","id":2267260504,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2267260504","order":7}]
+11:37:51.268 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:todoist-test/addATask.feature
+11:37:51.415 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 782
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 209
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:51 GMT
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 e969da2fdad94c11f618c9721b51b141.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: j6_ECruvmkGxL31mRv4zX6iGtrgSvXMbDU5EEmToTxUKhGpVMcjNAg==
+{"comment_count":0,"shared":false,"color":48,"name":"Inbox","id":2266692961,"inbox_project":true,"sync_id":0,"favorite":false,"url":"https:\/\/todoist.com\/showProject?id=2266692961"}
+11:37:51.434 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 6 (3 remaining) classpath:todoist-test/closeATask.feature
+11:37:51.449 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 733
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 19
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:51 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 62f2e56625f91dc13ed17b9eb89dabf7.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: 18YRnYGH4DyKa69U1hW480GtBVrGn-Wi3ZnJ7LAJ2-sPepmbSzW6Jg==
+404 page not found
+
+11:37:51.512 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 749
+1 < 404
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 10
+1 < Connection: keep-alive
+1 < Date: Wed, 09 Jun 2021 06:07:51 GMT
+1 < X-Content-Type-Options: nosniff
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 a8bfe9092ad5623dd7d816de23b5bf40.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Amz-Cf-Id: vCfLPw_0ZeTWu8iR2MxEVQj6lk4RrIFHT4pq21OGqmV41zsHaNEGPA==
+Not Found
+
+11:37:51.576 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 6 (2 remaining) classpath:todoist-test/createAProject.feature
+11:37:51.653 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 6 (1 remaining) classpath:todoist-test/deleteAProject.feature
+11:37:51.812 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:todoist-test/getUserProjects.feature
